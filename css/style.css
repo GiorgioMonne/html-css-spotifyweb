@@ -18,12 +18,12 @@ body{
 
 main{
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 60px);
     background-color: rgb(226, 43, 113);
     display: flex;
 }
 .barra{
-    width: 10%;
+    width: 30px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -33,24 +33,26 @@ main{
 }
 
 .corpo{
-    width: 90%;
+    width: calc(100% - 30px);
     height: 100%;
     background-color: rgb(68, 0, 255);
     overflow: auto;
 }
 
 .top{
-    width: 100%;
+    width: calc(100% - 30px);
     height: 60px;
+    position: fixed;
+    right: 0px;
     display: flex;
-    background-color: black;
+    background-color: rgb(16, 14, 29);
     justify-content: flex-end;
     align-items: center;
 }
 
 .musica{
     width: 100%;
-    /* height: calc(100% - 60px); */
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     background-color: rgb(192, 226, 43);
@@ -62,8 +64,65 @@ img{
 
 
 .sopra{
+    width: 100%;
+    height: 100vh;
     padding-top: 5px;
 }
+
+.sotto{
+    width: 100%;
+    height: 60px;
+    padding: 0 5px;
+
+   
+}
+
+.head , .logo{
+    display: flex;
+}
+
+.head span, .logo span{
+    display: none;
+    color: white;
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+}
+
+.centro div{
+    display: none;
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.playlist{
+    display: flex;
+    vertical-align: center;
+}
+
+.nom nav ul li{
+    list-style: none;
+    line-height: 30px;
+    overflow: auto;
+}
+
+.playlist i{
+    font-size: 30px;
+}
+
+.download div , .john div{
+    display: none;
+    font-size: 10px;
+}
+
+.download , .john {
+    display: flex;
+}
+
 
 
 .btn{
@@ -119,7 +178,6 @@ img{
     width: 90%;
     height: 60px;
     font-size: 20px;
-    /* background-color: aqua; */
     display: flex;
     margin: auto;
     color: white;
@@ -256,13 +314,51 @@ footer{
 
 
 
-@media screen and (min-width: 568px){
+@media screen and (min-width: 468px){
     
     .barra{
-        width: 30%;
+        width: 150px;
+        text-align: start;
+        align-items: flex-start;
+        padding: 5px 10px;
     }
 
     .corpo{
-        width: 70%;
+        width: calc(100% - 150px);
     }
+
+    .top{
+        width: calc(100% - 150px);
+        
+    }
+
+    .download div , .john div{
+        display: inline-block;
+        color: white;
+    }
+
+    .download{
+        border-bottom: 1px solid grey;
+    }
+
+    .centro div{
+        display: inline-block;
+    }
+
+    .head span, .logo span{
+        display: block;
+        padding: 5px 5px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .logo img{
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .logo span{
+        font-size: 20px;
+    }
+
 }
