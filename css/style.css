@@ -263,7 +263,7 @@ footer{
     display: flex;
     background-color: rgb(40, 40, 54);
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding-right: 10px;
 }
 
@@ -283,10 +283,18 @@ footer{
     display: flex;
     background-color: rgb(40, 40, 54);
     align-items: center;
-    justify-content: center;
-    justify-content:space-between ;
+    justify-content: flex-end;
+    /* justify-content:space-between ; */
     color: white;
     font-size: 10px;
+    padding: 0 5px;
+}
+
+.nav-right div{
+    padding: 0 5px;
+}
+
+.nav-left div{
     padding: 0 5px;
 }
 
