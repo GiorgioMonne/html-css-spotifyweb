@@ -94,35 +94,57 @@ img{
 .centro div{
     display: none;
     color: grey;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
 }
 
+.centro div h2{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 0;
+}
 
 .playlist{
+    height: 30px;
     display: flex;
-    vertical-align: center;
+}
+.nom{
+    overflow: auto;
 }
 
 .nom nav ul li{
     list-style: none;
     line-height: 30px;
-    overflow: auto;
+    
 }
 
 .playlist i{
     font-size: 30px;
 }
 
+
+
 .download div , .john div{
     display: none;
     font-size: 10px;
+    padding-left: 5px;
+
 }
 
-.download , .john {
+.download{
     display: flex;
+    line-height: 10px;
 }
 
+.john{
+    display: flex;
+    line-height: 20px;
+}
+
+.download img{
+    height: 10px;
+}
 
 
 .btn{
@@ -275,9 +297,9 @@ footer{
     flex-direction: column
 }
 
-.nom-bran h4{
+/* .nom-bran h4{
     color: ;
-}
+} */
 
 .pref{
     color: grey;
@@ -339,6 +361,13 @@ footer{
 
     .download{
         border-bottom: 1px solid grey;
+        padding-bottom: 5px;
+        color: grey;
+
+    }
+
+    .john{
+        margin-top: 5px;
     }
 
     .centro div{
@@ -348,7 +377,7 @@ footer{
     .head span, .logo span{
         display: block;
         padding: 5px 5px;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
     }
 
