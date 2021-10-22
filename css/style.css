@@ -71,9 +71,8 @@ img{
 
 .sotto{
     width: 100%;
-    height: 60px;
-    padding: 0 5px;
-
+    height: 50px;  
+    padding-left: 5px;
    
 }
 
@@ -253,7 +252,7 @@ footer{
 .menu {
     width:100%;
     height: 100%;
-    background-color: rgb(52, 52, 52);
+    background-color: rgb(42, 41, 41);
     display: flex;
     justify-content: space-between;
 }
@@ -261,33 +260,32 @@ footer{
 .nav-left{
     width: 30%;
     display: flex;
-    background-color: rgb(40, 40, 54);
     align-items: center;
     justify-content: flex-start;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 .nav-middle{
     width: 40%;
     display: flex;
-    background-color: rgb(40, 40, 54);
     flex-direction: column;
-    justify-content: space-around;
     color: white;
     font-size: 10px;
-    padding: 0 5px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 .nav-right{
     width: 30%;
     display: flex;
-    background-color: rgb(40, 40, 54);
     align-items: center;
     justify-content: flex-end;
-    /* justify-content:space-between ; */
     color: white;
     font-size: 10px;
-    padding: 0 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .nav-right div{
@@ -318,14 +316,25 @@ footer{
 
 .play{
     display: flex;
-    justify-content: space-between;
-    font-size: 15px;
+    /* padding-bottom: 10px; */
+    font-size: 10px;
+    line-height: 30px;
+}
+
+
+.play #strana{
+    font-size: 20px;
 }
 
 .durata{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    padding: 0 5px;
+    line-height: 30px;
+}
+
+.play div{
+    padding: 0 10px;
 }
 
 .segm{
@@ -340,6 +349,10 @@ footer{
     height: 3px;
     border-radius: 2em;
     background-color: gray;
+}
+
+.nav-left div{
+    padding-right: 5px;
 }
 
 
@@ -398,4 +411,16 @@ footer{
         font-size: 20px;
     }
 
+    .sotto{
+        padding-left: 0px;
+    }
+
+    .pref{
+        flex-direction: row;
+        
+    }
+
+    .pref i{
+        padding-right: 5px;
+    }
 }
